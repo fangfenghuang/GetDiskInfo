@@ -1,0 +1,12 @@
+#ifndef DISKINFO_DLL_GLOBAL_H
+#define DISKINFO_DLL_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(DISKINFO_DLL_LIBRARY)
+#  define DISKINFO_DLLSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define DISKINFO_DLLSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // DISKINFO_DLL_GLOBAL_H
